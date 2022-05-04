@@ -92,10 +92,7 @@ public class TicTacToe {
         for (char[] chars : gameField) {
             System.out.print("| ");
             for (int j = 0; j < gameField.length; ++j) {
-                if (chars[j] == ' ')
-                    System.out.println('P' + " ");
-                else
-                    System.out.print(chars[j] + " ");
+               System.out.print(chars[j] + " ");
             }
             System.out.println("|");
         }
