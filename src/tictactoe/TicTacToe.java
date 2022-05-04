@@ -50,7 +50,7 @@ public class TicTacToe {
                 if (gameField[n-1][m-1] != '_')
                     throw new CellIsOccupied();
                 TicTacToe.printGameField(n, m);
-            } catch (NumberFormatException e) {
+            } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
                 System.out.println("You should enter numbers");
             } catch (CellIsOccupied e) {
                 System.out.println(cellIsOccupied.toString());
